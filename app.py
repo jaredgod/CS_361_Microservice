@@ -6,9 +6,7 @@ app = app = Flask(__name__)
 
 @app.route('/')
 def main():
-    json_data = flask.request.json
-    data = json_data["data"]
-    return translater.weirdify(data)
+    return translater.weirdify('Hello World')
 
 if __name__ == '__main__':
     app.run()
