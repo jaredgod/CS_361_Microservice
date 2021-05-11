@@ -10,4 +10,5 @@ def main():
     data = json_data["data"]
     return translater.weirdify(data)
 
-app.run(host='127.0.0.1', port=8081)
+if __name__ == '__main__':
+    app.run()
